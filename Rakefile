@@ -45,7 +45,7 @@ task :gen_geojson do
       L.debug("#{place.venue.name.inspect}: #{place.venue.location.to_hash}")
       # NOTE: We don't use from_latlong becuase that expects formats like 22`34
       # 23.45N while we get stuff like 51.5168466460692 from 4sq.
-      simplified_data[place.venue.name] = GeoRuby::SimpleFeatures::Point.from_lon_lat(place.venue.location.lon, place.venue.location.lat)
+      simplified_data[place.venue.name] = GeoRuby::SimpleFeatures::Point.from_lon_lat(place.venue.location.lng, place.venue.location.lat)
     end
 
     # Now we make the hash look like geojson.
