@@ -1,0 +1,20 @@
+austin:
+  - Frank:
+    address: 407 Colorado St, Austin, TX 78701
+    twitter: hotdogscoldbeer
+    instagram: hotdogscoldbeer
+    website: http://hotdogscoldbeer.com
+    noise: 75
+    tattoos: 1.75 sleeves
+    now_playing: Hurrican - MS MR
+    seating:
+      indoor: 100
+      outdoor: 10
+    wifi:
+      password: Open
+      download: 3.22
+      upload: 2.08
+    color: Organic Fair Trade Brown
+    bathroom: Yes
+    attire: Canadian Tuxedo
+    beans: Various, all locally sourced
