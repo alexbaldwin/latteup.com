@@ -1,6 +1,7 @@
 austin:
-  - Frank:
+  - frank:
     name: Frank
+    headline: Hot dogs, cold beer.
     cover_image: images/frank-demo.jpg
     address: 407 Colorado St, Austin, TX 78701
     twitter: hotdogscoldbeer

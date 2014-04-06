@@ -4,14 +4,14 @@ title: Welcome to Middleman
 
 <article class="clearfix center measure-wide wrap">
   <section class="bg-dark-gray mobile-block relative bg-dark-gray white cover quarter-width left quarter-height">
-        <a href="#" class="white"><h1 class="h2 regular absolute m0 leading-15 caps quarter-height quarter-width">Dripstr</h1></a>
+        <a href="#" class="white"><h1 class="sans-serif h2 regular absolute m0 leading-15 caps quarter-height quarter-width">Dripstr</h1></a>
       </section>
 
 
   <% 23.times do %>
     <% data.coffee.austin.each do |shop| %>
-      <section class="bg-dark-gray mobile-block relative bg-dark-gray white cover quarter-width left quarter-height" style="background-image: url(images/frank-demo.jpg);">
-        <a href="#" class="white"><h2 class="h2 regular absolute m0 leading-15 caps quarter-height quarter-width"><%= shop.name %></h2></a>
+      <section class="sans-serif bg-dark-gray mobile-block relative bg-dark-gray white cover quarter-width left quarter-height" style="background-image: url(images/frank-demo.jpg);">
+        <a href="/shop.html" class="white"><h2 class="h2 regular absolute m0 leading-15 caps quarter-height quarter-width"><%= shop.name %></h2></a>
       </section>
     <% end %>
   <% end %>

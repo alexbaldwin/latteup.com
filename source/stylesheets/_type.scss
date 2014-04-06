@@ -1,13 +1,17 @@
 // Type
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
   line-height: 1.5rem;
   font-weight: 400;
-  font-family: 'Knockout 27 A', 'Knockout 27 B';
-  font-style: normal;
 }
 
+
+.sans-serif {
+  font-family: 'Knockout 27 A', 'Knockout 27 B';
+  font-style: normal;
+  font-weight: 400;
+}
 
 // Base Type Scale
 
@@ -75,12 +79,18 @@ small, .small, .f5 {
 
 // Utilities
 
-strong, .bold { font-weight: bold; }
+strong, .bold { font-weight: 700; }
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
 .caps { text-transform: uppercase; letter-spacing: .0625em; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
+.dropcap:first-child:first-letter {
+  float: left;
+  font-size: 4.5rem;
+  line-height: 4rem;
+  margin-right: 0.5rem;
+}
 
 
 // Typographical Measure
