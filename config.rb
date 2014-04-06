@@ -5,6 +5,14 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
+data.coffee.austin.each do |shop|
+  proxy "/#{shop.slug}.html",
+    "/shop.html",
+    :locals => {
+      :shop => shop
+    }
+end
+
 configure :build do
   activate :relative_assets
 end

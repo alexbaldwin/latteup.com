@@ -6,7 +6,9 @@ title: Austin Coffee Guide
   <section class="pt4">
     <hgroup class="measure-wide wrap px2 center">
       <h1 class="h1 caps regular sans-serif m0">
-        <%= link_to "Dripstr", "/", alt: 'Dripstr', class: "dark-gray" %>
+        <% link_to("/", alt: 'Dripstr', class: "dark-gray") do %>
+          <%= image_tag("dripstr-logo.svg", width: 300) %>
+        <% end %>
       </h1>
       <h2 class="h3 mid-gray regular sans-serif caps mb2">
         Austin coffee guide for lovers

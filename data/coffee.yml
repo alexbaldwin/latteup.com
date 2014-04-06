@@ -1,5 +1,6 @@
 austin:
-  - frank:
+  - shop:
+    slug: austin-java-demo
     name: Austin Java Demo
     headline: Hot dogs &amp; cold beer
     cover_image: images/austin-java-demo.jpg
