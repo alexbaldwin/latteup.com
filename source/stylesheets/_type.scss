@@ -4,6 +4,8 @@ body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.5rem;
   font-weight: 400;
+  font-family: 'Knockout 27 A', 'Knockout 27 B';
+  font-style: normal;
 }
 
 
@@ -76,7 +78,7 @@ small, .small, .f5 {
 strong, .bold { font-weight: bold; }
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
-.caps { text-transform: uppercase; letter-spacing: .2em; }
+.caps { text-transform: uppercase; letter-spacing: .0625em; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
 
@@ -89,10 +91,16 @@ strong, .bold { font-weight: bold; }
 .measure-wide { max-width: 60rem; }
 
 
+// Tiles
+
+.quarter-width { width: 15rem; }
+.quarter-height { height: 15rem; }
+
 // Leading utilities to control line-height
 
 .leading-1 { line-height: 1.5rem; }
 .leading-2 { line-height: 2rem; }
 .leading-3 { line-height: 3rem; }
 .leading-4 { line-height: 4rem; }
+.leading-15 { line-height: 15rem; }
 
