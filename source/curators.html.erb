@@ -1,0 +1,25 @@
+<header class="mt4">
+  <section class="pt4">
+    <hgroup class="measure-wide wrap px2 bg-white">
+      <h1 class="h1 caps regular sans-serif m0">
+        Dripstr
+      </h1>
+      <h2 class="h3 mid-gray regular sans-serif caps mb2">
+        Our curation team
+      </h2>
+    </hgroup>
+  </section>
+</header>
+
+<article class="clearfix measure-wide wrap">
+  <% 4.times do %>
+    <section class="left center mobile-block quarter-width">
+      <div class="p1">
+        <%= image_tag("https://pbs.twimg.com/profile_images/437735039380381697/dMnIQ60w.jpeg", width: 300, height: 300, class: "full-width circle", alt: "Jim Jordan", style: "height: auto;") %>
+        <h2 class="h3 caps regular sans-serif m0">Jim Jordan</h2>
+        <h3 class="small regular m0">Design</h3>
+        <p class="small"><%= link_to "@jimjjordan", "https://twitter.com/jimjjordan" %></p>
+      </div>
+    </section>
+  <% end %>
+</article>

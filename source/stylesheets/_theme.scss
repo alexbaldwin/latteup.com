@@ -137,4 +137,8 @@ a {
 // Utilities
 .rounded { border-radius: .25rem; }
 .transition-all { transition: all .2s ease; }
+.circle {
+  border-radius: 50%;
+
+}
 
