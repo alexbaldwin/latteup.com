@@ -11,6 +11,7 @@ $dark-gray: #333;
 $red: #f52;
 $green: #0f6;
 $orange: #fc2;
+$maroon: #85144B;
 
 
 .white { color: #fff; }
@@ -43,10 +44,10 @@ body {
 }
 
 a {
-  color: $blue;
+  color: $maroon;
   text-decoration: none;
   &:hover {
-    color: darken($blue, 10%);
+    color: darken($maroon, 10%);
   }
 }
 

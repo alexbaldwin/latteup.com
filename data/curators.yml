@@ -1,0 +1,15 @@
+- curator:
+  name: Alex Baldwin
+  image: curators/alex-baldwin.jpg
+  title: Chief Editor
+  twitter: alexbaldwin
+- curator:
+  name: Jim Jordan
+  image: curators/jim-jordan.jpg
+  title: Designer
+  twitter: jimjjordan
+- curator:
+  name: Andy Keil
+  image: curators/andy-keil.jpg
+  title: Austin Editor
+  twitter: alwaysunday
