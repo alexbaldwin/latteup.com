@@ -20,3 +20,17 @@
   display: table;
 }
 
+// Table Cell Centering
+
+.table-parent {
+  display: table;
+}
+
+.table-child {
+  display: table-cell;
+}
+
+.middle-align {
+  vertical-align: middle;
+}
+

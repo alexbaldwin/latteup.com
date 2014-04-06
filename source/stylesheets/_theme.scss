@@ -127,6 +127,12 @@ a {
   border-color: $light-gray;
 }
 
+.hr {
+  border: 0;
+  border-bottom: 0.125em solid $light-gray;
+  width: 2.5rem;
+}
+
 // Utilities
 .rounded { border-radius: .25rem; }
 .transition-all { transition: all .2s ease; }

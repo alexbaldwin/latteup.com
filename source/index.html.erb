@@ -10,8 +10,8 @@ title: Welcome to Middleman
 
   <% 23.times do %>
     <% data.coffee.austin.each do |shop| %>
-      <section class="sans-serif bg-dark-gray mobile-block relative bg-dark-gray white cover quarter-width left quarter-height" style="background-image: url(images/frank-demo.jpg);">
-        <a href="/shop.html" class="white"><h2 class="h2 regular absolute m0 leading-15 caps quarter-height quarter-width"><%= shop.name %></h2></a>
+      <section class="sans-serif bg-dark-gray mobile-block bg-dark-gray white cover quarter-width left quarter-height table-parent" style="background-image: url(images/frank-demo.jpg);">
+        <a href="/shop.html" class="white quarter-height px2 table-child middle-align"><h2 class="h2 regular m0 caps"><%= shop.name %></h2></a>
       </section>
     <% end %>
   <% end %>
