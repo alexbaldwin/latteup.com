@@ -1,8 +1,8 @@
 austin:
   - frank:
-    name: Frank
+    name: Austin Java Demo
     headline: Hot dogs &amp; cold beer
-    cover_image: images/frank-demo.jpg
+    cover_image: images/austin-java-demo.jpg
     address: 407 Colorado St, Austin, TX 78701
     twitter: hotdogscoldbeer
     instagram: hotdogscoldbeer
