@@ -1,38 +1,47 @@
-<header class="cover" style="background-image: url(/images/frank-demo.jpg);">
-  <section class="measure wrap p4">
-    <hgroup class="px2 py1 bg-white">
+<header class="mt4">
+  <section class="pt4">
+    <hgroup class="measure-wide wrap px2 bg-white">
       <h1 class="h1 caps regular sans-serif m0">
         <%= data.coffee.austin.first.name %>
       </h1>
-      <h2 class="h2 regular sans-serif caps">
+      <h2 class="h3 mid-gray regular sans-serif caps m0">
         <%= data.coffee.austin.first.headline %>
+        / <%= link_to "Austin, TX", "/", alt: "Coffee shops in Austin, TX" %>
       </h2>
     </hgroup>
   </section>
 
 </header>
 
-<article class="measure-wide wrap mt4 m2 clearfix">
-  <aside class="right mobile-block">
+<article class="measure-wide wrap m2 clearfix">
+  <%= image_tag( data.coffee.austin.first.cover_image, class: "full-width") %>
+  <aside class="mt2 right mobile-block">
     <ul class="mid-gray small">
       <li><%= data.coffee.austin.first.address %></li>
       <li><%= data.coffee.austin.first.website %></li>
-      <li><%= data.coffee.austin.first.noise %> dB</li>
-      <li><%= data.coffee.austin.first.tattoos %> per barista</li>
-      <li><%= data.coffee.austin.first.now_playing %></li>
-      <li><%= data.coffee.austin.first.seating.indoor %> indoor seats</li>
-      <li><%= data.coffee.austin.first.seating.outdoor %> outdoor seats</li>
-      <li>Password: <%= data.coffee.austin.first.wifi.password %></li>
-      <li><%= data.coffee.austin.first.wifi.download %> Mbps download</li>
-      <li><%= data.coffee.austin.first.wifi.upload %> Mbps upload</li>
-      <li><%= data.coffee.austin.first.color %></li>
-      <li>Is it poopable? <%= data.coffee.austin.first.bathroom %></li>
-      <li>Attire: <%= data.coffee.austin.first.attire %></li>
-      <li>Beans: <%= data.coffee.austin.first.beans %></li>
+      <li>Noise level is ~<%= data.coffee.austin.first.noise %> dB</li>
+      <li><%= data.coffee.austin.first.tattoos %> tattoos per barista</li>
+      <li>Now playing <%= link_to data.coffee.austin.first.now_playing.title, data.coffee.austin.first.now_playing.link %></li>
+      <li>
+        <%= data.coffee.austin.first.seating.indoor %> indoor seats
+        / <%= data.coffee.austin.first.seating.outdoor %> outdoor seats
+      </li>
+      <li>
+        <%= data.coffee.austin.first.wifi.download %> Mbps download
+        / <%= data.coffee.austin.first.wifi.upload %> Mbps upload
+      </l>
+      <li>Color of <em><span style="color: <%= data.coffee.austin.first.color.hex %>;"><%= data.coffee.austin.first.color.title %></span></em></li>
+      <% if data.coffee.austin.first.bathroom %>
+        <li>
+          It's <em>safe</em> to poop here
+        </li>
+      <% end %>
+      <li>Best to wear your <em><%= data.coffee.austin.first.attire %></em></li>
+      <li>Beans are from <em><%= data.coffee.austin.first.beans %></em></li>
     </ul>
   </aside>
 
-  <section class="oh pr1">
+  <section class="oh mt2">
     <p class="p dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar cursus metus, sed accumsan purus. Fusce vel faucibus urna. Cras aliquet, eros at condimentum fermentum, ligula metus suscipit urna, vel cursus dolor quam sed lacus. Suspendisse lobortis diam sit amet metus tempus, ut facilisis tellus consectetur. Proin mauris nulla, fermentum quis sapien a, bibendum cursus erat. Vivamus ut euismod sapien. Phasellus posuere metus neque, pulvinar pretium dolor convallis quis. Mauris ut lacinia leo. Maecenas fringilla ullamcorper diam, nec molestie arcu ultrices vel. Donec adipiscing, nisi at gravida rhoncus, dui enim pellentesque enim, id pretium nibh nunc et eros. Integer dictum, metus a ornare luctus, eros lorem vehicula lorem, vel suscipit arcu enim lacinia mauris. Sed elit erat, mollis at adipiscing a, volutpat vitae arcu.</p>
 
     <p class="p">Duis non tortor ut eros feugiat luctus. Aenean tempor laoreet elit, rutrum mollis quam elementum semper. Fusce adipiscing justo libero, eu ultricies tortor volutpat at. Cras ut turpis sed neque malesuada convallis. Sed ac magna dignissim, malesuada neque quis, pretium mauris. Maecenas arcu metus, vulputate ut venenatis condimentum, pharetra eget arcu. Sed ut nibh ac felis tempor malesuada. Mauris non arcu id metus laoreet accumsan.</p>

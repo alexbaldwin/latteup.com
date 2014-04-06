@@ -1,15 +1,17 @@
 austin:
   - frank:
     name: Frank
-    headline: Hot dogs, cold beer.
+    headline: Hot dogs &amp; cold beer
     cover_image: images/frank-demo.jpg
     address: 407 Colorado St, Austin, TX 78701
     twitter: hotdogscoldbeer
     instagram: hotdogscoldbeer
     website: http://hotdogscoldbeer.com
     noise: 75
-    tattoos: 1.75 sleeves
-    now_playing: Hurricane - MS MR
+    tattoos: 1.75 sleeve
+    now_playing:
+      title: Hurricane - MS MR
+      link: https://www.youtube.com/watch?v=7sj684zcmzw
     seating:
       indoor: 100
       outdoor: 10
@@ -17,7 +19,9 @@ austin:
       password: Open
       download: 3.22
       upload: 2.08
-    color: Organic Fair Trade Brown
+    color:
+      title: organic fair trade brown
+      hex: "#804000"
     bathroom: Yes
-    attire: Canadian Tuxedo
-    beans: Various, all locally sourced
+    attire: Canadian tuxedo
+    beans: assorted local roasters
