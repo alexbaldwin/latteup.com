@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Dripstr</title>
+    <title><%= "#{current_page.data.title || @title} | Dripstr" %></title>
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6326032/755624/css/fonts.css" />
     <%= stylesheet_link_tag "basscss" %>
@@ -16,11 +16,11 @@
 
     <footer class="center leading-3 mb4">
       <hr class="hr m2 wrap">
-      <span class="mr1 mobile-block small"><%= link_to "About", "#", alt: "Dude Bro" %></span>
-      <span class="mr1 mobile-block small"><%= link_to "Curators", "/curators.html", alt: "Dude Bro" %></span>
-      <span class="mr1 mobile-block small"><%= link_to "Twitter", "https://twitter.com/dripstrcoffee", alt: "Dude Bro" %></span>
-      <span class="mr1 mobile-block small"><%= link_to "Instagram", "https://instagram.com/dripstr", alt: "Dude Bro" %></span>
-      <span class="mr1 mobile-block small"><%= link_to "Github", "https://github.com/simplecasual/dripstr", alt: "Dude Bro" %></span>
+      <span class="mr1 mobile-block small"><%= link_to "About", "#", alt: "About Dripstr" %></span>
+      <span class="mr1 mobile-block small"><%= link_to "Curators", "/curators.html", alt: "Curation Team for Dripstr" %></span>
+      <span class="mr1 mobile-block small"><%= link_to "Twitter", "https://twitter.com/dripstrcoffee", alt: "Follow @dripstrcoffee on Twitter" %></span>
+      <span class="mr1 mobile-block small"><%= link_to "Instagram", "https://instagram.com/dripstr", alt: "Follow @dripstr on Instagram" %></span>
+      <span class="mr1 mobile-block small"><%= link_to "Github", "https://github.com/simplecasual/dripstr", alt: "Star or Fork Dripstr on Github" %></span>
       <p class="small mid-gray mobile-hide">
         &copy; 2014 Simple Casual. All rights reserved.
       </p>
