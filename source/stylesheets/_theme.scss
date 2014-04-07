@@ -11,6 +11,7 @@ $dark-gray: #333;
 $red: #f52;
 $green: #0f6;
 $orange: #fc2;
+$maroon: #85144B;
 
 
 .white { color: #fff; }
@@ -43,10 +44,10 @@ body {
 }
 
 a {
-  color: $blue;
+  color: $maroon;
   text-decoration: none;
   &:hover {
-    color: darken($blue, 10%);
+    color: darken($maroon, 10%);
   }
 }
 
@@ -137,8 +138,10 @@ a {
 // Utilities
 .rounded { border-radius: .25rem; }
 .transition-all { transition: all .2s ease; }
-.circle {
-  border-radius: 50%;
+.circle { border-radius: 50%; }
 
-}
+.bg-center { background-position: center center; }
+
+.hover-white:hover { color: #fff; }
+.hover-bg-black-sixty:hover { background-color: rgba(0,0,0, 0.6); }
 

@@ -1,24 +1,24 @@
 <header class="mt4">
   <section class="pt4">
-    <hgroup class="measure-wide wrap px2 center">
+    <div class="measure-wide wrap px2 center">
       <h1 class="h1 caps regular sans-serif m0">
         <%= link_to "Dripstr", "/", alt: 'Dripstr', class: "dark-gray" %>
       </h1>
       <h2 class="h3 mid-gray regular sans-serif caps mb2">
         Curation team
       </h2>
-    </hgroup>
+    </div>
   </section>
 </header>
 
 <article class="clearfix measure-wide wrap">
-  <% 4.times do %>
+  <% data.curators.each do |curator| %>
     <section class="left center mobile-block quarter-width">
       <div class="p1">
-        <%= image_tag("curators/jim-jordan.jpg", width: 300, height: 300, class: "full-width circle", alt: "Jim Jordan", style: "height: auto;") %>
-        <h2 class="h3 caps regular sans-serif m0">Jim Jordan</h2>
-        <h3 class="small regular m0">Design</h3>
-        <p class="small"><%= link_to "@jimjjordan", "https://twitter.com/jimjjordan" %></p>
+        <%= image_tag(curator.image, class: "full-width circle", alt: curator.name, style: "height: auto;") %>
+        <h2 class="h3 caps regular sans-serif m0"><%= curator.name %></h2>
+        <h3 class="small regular m0"><%= curator.title %></h3>
+        <p class="small"><%= link_to "@#{curator.twitter}", "https://twitter.com/#{curator.twitter}", alt: "Follow #{curator.name} on Twitter" %></p>
       </div>
     </section>
   <% end %>

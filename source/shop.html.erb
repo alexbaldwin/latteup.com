@@ -1,3 +1,5 @@
+<% @title = data.coffee.austin.first.name %>
+
 <header class="mt4">
   <section class="pt4">
     <hgroup class="measure-wide wrap center px2">
@@ -15,20 +17,19 @@
 <article class="measure-wide wrap m2 clearfix">
   <%= image_tag( data.coffee.austin.first.cover_image, class: "left half-width mobile-block") %>
   <aside class="left half-width mobile-block mt2">
-    <ul class="mid-gray">
+    <ul class="mid-gray small">
       <li><%= data.coffee.austin.first.address %></li>
-      <li><%= data.coffee.austin.first.website %></li>
-      <li>Noise level is ~<%= data.coffee.austin.first.noise %> dB</li>
-      <li><%= data.coffee.austin.first.tattoos %> tattoos per barista</li>
-      <li>Now playing <%= link_to data.coffee.austin.first.now_playing.title, data.coffee.austin.first.now_playing.link %></li>
       <li>
         <%= data.coffee.austin.first.seating.indoor %> indoor seats
         / <%= data.coffee.austin.first.seating.outdoor %> outdoor seats
       </li>
+      <li>Now playing <%= link_to data.coffee.austin.first.now_playing.title, data.coffee.austin.first.now_playing.link %></li>
+      <li>Noise level is ~<%= data.coffee.austin.first.noise %> dB</li>
       <li>
         <%= data.coffee.austin.first.wifi.download %> Mbps download
         / <%= data.coffee.austin.first.wifi.upload %> Mbps upload
       </l>
+      <li><%= data.coffee.austin.first.tattoos %> tattoos per barista</li>
       <li>Color of <em><span style="color: <%= data.coffee.austin.first.color.hex %>;"><%= data.coffee.austin.first.color.title %></span></em></li>
       <% if data.coffee.austin.first.bathroom %>
         <li>
