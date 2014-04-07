@@ -1,19 +1,37 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
-    
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <title>Dripstr</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6326032/755624/css/fonts.css" />
+    <%= stylesheet_link_tag "basscss" %>
   </head>
-  
   <body class="<%= page_classes %>">
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
     <%= yield %>
+
+    <footer class="center leading-3 mb4">
+      <hr class="hr m2 wrap">
+      <span class="mr1 mobile-block small"><%= link_to "Curators", "/curators.html", alt: "Dude Bro" %></span>
+      <span class="mr1 mobile-block small"><%= link_to "Twitter", "https://twitter.com/dripstrcoffee", alt: "Dude Bro" %></span>
+      <span class="mr1 mobile-block small"><%= link_to "Instagram", "https://instagram.com/dripstr", alt: "Dude Bro" %></span>
+      <span class="mr1 mobile-block small"><%= link_to "Github", "https://github.com/simplecasual/dripstr", alt: "Dude Bro" %></span>
+      <p class="small mid-gray">
+        &copy; 2014 Simple Casual. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                                                              function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-24725855-3');ga('send','pageview');
+    </script>
   </body>
 </html>

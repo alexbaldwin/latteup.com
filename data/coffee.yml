@@ -1,0 +1,27 @@
+austin:
+  - frank:
+    name: Austin Java Demo
+    headline: Hot dogs &amp; cold beer
+    cover_image: images/austin-java-demo.jpg
+    address: 407 Colorado St, Austin, TX 78701
+    twitter: hotdogscoldbeer
+    instagram: hotdogscoldbeer
+    website: http://hotdogscoldbeer.com
+    noise: 75
+    tattoos: 1.75 sleeve
+    now_playing:
+      title: Hurricane - MS MR
+      link: https://www.youtube.com/watch?v=7sj684zcmzw
+    seating:
+      indoor: 100
+      outdoor: 10
+    wifi:
+      password: Open
+      download: 3.22
+      upload: 2.08
+    color:
+      title: organic fair trade brown
+      hex: "#804000"
+    bathroom: Yes
+    attire: Canadian tuxedo
+    beans: assorted local roasters

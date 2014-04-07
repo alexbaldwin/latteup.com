@@ -1,10 +1,25 @@
 ---
 title: Welcome to Middleman
 ---
+<header class="mt4">
+  <section class="pt4">
+    <hgroup class="measure-wide wrap px2 center">
+      <h1 class="h1 caps regular sans-serif m0">
+        <%= link_to "Dripstr", "/", alt: 'Dripstr', class: "dark-gray" %>
+      </h1>
+      <h2 class="h3 mid-gray regular sans-serif caps mb2">
+        The coffee guide for awesome people
+      </h2>
+    </hgroup>
+  </section>
+</header>
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<article class="clearfix center measure-wide wrap">
+  <% 23.times do %>
+    <% data.coffee.austin.each do |shop| %>
+      <section class="sans-serif bg-dark-gray mobile-block bg-dark-gray white cover quarter-width left quarter-height table-parent" style="background-image: url(<%= shop.cover_image %>);">
+        <a href="/shop.html" class="white quarter-height px2 table-child middle-align bg-black-forty"><h2 class="h2 regular m0 caps"><%= shop.name %></h2></a>
+      </section>
+    <% end %>
+  <% end %>
+</article>

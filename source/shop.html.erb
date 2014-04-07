@@ -1,0 +1,59 @@
+<header class="mt4">
+  <section class="pt4">
+    <hgroup class="measure-wide wrap center px2">
+      <h1 class="h1 caps regular sans-serif m0">
+        <%= data.coffee.austin.first.name %>
+      </h1>
+      <h2 class="h3 mid-gray regular sans-serif caps m0">
+        <%= data.coffee.austin.first.headline %>
+        / <%= link_to "Austin, TX", "/", alt: "Coffee shops in Austin, TX" %>
+      </h2>
+    </hgroup>
+  </section>
+</header>
+
+<article class="measure-wide wrap m2 clearfix">
+  <%= image_tag( data.coffee.austin.first.cover_image, class: "left half-width mobile-block") %>
+  <aside class="left half-width mobile-block mt2">
+    <ul class="mid-gray">
+      <li><%= data.coffee.austin.first.address %></li>
+      <li><%= data.coffee.austin.first.website %></li>
+      <li>Noise level is ~<%= data.coffee.austin.first.noise %> dB</li>
+      <li><%= data.coffee.austin.first.tattoos %> tattoos per barista</li>
+      <li>Now playing <%= link_to data.coffee.austin.first.now_playing.title, data.coffee.austin.first.now_playing.link %></li>
+      <li>
+        <%= data.coffee.austin.first.seating.indoor %> indoor seats
+        / <%= data.coffee.austin.first.seating.outdoor %> outdoor seats
+      </li>
+      <li>
+        <%= data.coffee.austin.first.wifi.download %> Mbps download
+        / <%= data.coffee.austin.first.wifi.upload %> Mbps upload
+      </l>
+      <li>Color of <em><span style="color: <%= data.coffee.austin.first.color.hex %>;"><%= data.coffee.austin.first.color.title %></span></em></li>
+      <% if data.coffee.austin.first.bathroom %>
+        <li>
+          It's <em>safe</em> to poop here
+        </li>
+      <% end %>
+      <li>Best to wear your <em><%= data.coffee.austin.first.attire %></em></li>
+      <li>Beans are from <em><%= data.coffee.austin.first.beans %></em></li>
+    </ul>
+  </aside>
+</article>
+
+<article class="measure wrap px2">
+  <section class="oh mt2">
+    <p class="p dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar cursus metus, sed accumsan purus. Fusce vel faucibus urna. Cras aliquet, eros at condimentum fermentum, ligula metus suscipit urna, vel cursus dolor quam sed lacus. Suspendisse lobortis diam sit amet metus tempus, ut facilisis tellus consectetur. Proin mauris nulla, fermentum quis sapien a, bibendum cursus erat. Vivamus ut euismod sapien. Phasellus posuere metus neque, pulvinar pretium dolor convallis quis. Mauris ut lacinia leo. Maecenas fringilla ullamcorper diam, nec molestie arcu ultrices vel. Donec adipiscing, nisi at gravida rhoncus, dui enim pellentesque enim, id pretium nibh nunc et eros. Integer dictum, metus a ornare luctus, eros lorem vehicula lorem, vel suscipit arcu enim lacinia mauris. Sed elit erat, mollis at adipiscing a, volutpat vitae arcu.</p>
+
+    <p class="p">Duis non tortor ut eros feugiat luctus. Aenean tempor laoreet elit, rutrum mollis quam elementum semper. Fusce adipiscing justo libero, eu ultricies tortor volutpat at. Cras ut turpis sed neque malesuada convallis. Sed ac magna dignissim, malesuada neque quis, pretium mauris. Maecenas arcu metus, vulputate ut venenatis condimentum, pharetra eget arcu. Sed ut nibh ac felis tempor malesuada. Mauris non arcu id metus laoreet accumsan.</p>
+
+    <p class="p">Aenean vitae accumsan leo, ac adipiscing purus. Suspendisse potenti. Phasellus lobortis, magna eget commodo varius, elit arcu placerat nisi, eu faucibus neque turpis at massa. Sed ac turpis semper, lobortis urna eu, pulvinar est. Maecenas pulvinar commodo gravida. Fusce sollicitudin ultrices aliquam. Duis gravida bibendum risus, id consectetur purus sodales eu. Phasellus ullamcorper dolor at nisl scelerisque pretium.</p>
+
+
+  </section>
+
+  <section class="center">
+    <hr class="hr m2 wrap">
+    <h2 class="h2 regular m0 sans-serif caps"><%= link_to "&larr;Austin Coffee Shops&mdash;", "/" %></h2>
+  </section>
+</article>
