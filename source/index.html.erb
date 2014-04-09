@@ -18,15 +18,13 @@ title: Austin Coffee Guide
 </header>
 
 <article class="clearfix center measure-wide py2 wrap">
-  <% 23.times do %>
-    <% data.coffee.austin.each do |shop| %>
-      <section class="sans-serif bg-dark-gray mobile-block bg-dark-gray white cover quarter-width left quarter-height table-parent bg-center" style="background-image: url(<%= shop.cover_image %>);">
-        <% link_to("shop", class: "transition-all hover-bg-black-sixty hover-white white quarter-height px2 table-child middle-align bg-black-forty") do %>
-          <h2 class="h2 regular m0 caps">
-            <%= shop.name %>
-          </h2>
-        <% end %>
-      </section>
-    <% end %>
+  <% data.coffee.austin.each do |shop| %>
+    <section class="sans-serif bg-dark-gray mobile-block bg-dark-gray white cover quarter-width left quarter-height table-parent bg-center" style="background-image: url(/images/shops/austin/<%= shop.slug %>-cover.jpg);">
+      <% link_to("/#{shop.slug}", class: "transition-all hover-bg-black-sixty hover-white white quarter-height px2 table-child middle-align bg-black-forty") do %>
+        <h2 class="h2 regular m0 caps">
+          <%= shop.name %>
+        </h2>
+      <% end %>
+    </section>
   <% end %>
 </article>

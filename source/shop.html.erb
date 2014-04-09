@@ -15,27 +15,28 @@
 </header>
 
 <article class="measure-wide wrap m2 clearfix">
-  <%= image_tag( shop.cover_image, class: "left half-width mobile-block") %>
+  <%= image_tag( "/images/shops/austin/#{shop.slug}-cover.jpg", class: "left half-width mobile-block") %>
   <aside class="left half-width mobile-block mt2">
     <ul class="mid-gray small">
       <li><%= shop.address %></li>
       <li>
-        <%= shop.seating.indoor %> indoor seats
-        / <%= shop.seating.outdoor %> outdoor seats
+        <%= shop.seating_indoor %> indoor seats / <%= shop.seating_outdoor %> outdoor seats
       </li>
-      <li>Now playing <%= link_to shop.now_playing.title, shop.now_playing.link %></li>
-      <li>Noise level is ~<%= shop.noise %> dB</li>
       <li>
-        <%= shop.wifi.download %> Mbps download
-        / <%= shop.wifi.upload %> Mbps upload
-      </l>
-      <li><%= shop.tattoos %> tattoos per barista</li>
-      <li>Color of <em><span style="color: <%= shop.color.hex %>;"><%= shop.color.title %></span></em></li>
-      <% if shop.bathroom %>
-        <li>
-          It's <em>safe</em> to poop here
-        </li>
-      <% end %>
+        Now playing
+        <%= link_to shop.now_playing_title, shop.now_playing_link %>
+      </li>
+      <li>
+        Noise level is
+        ~<%= shop.noise %> dB
+      </li>
+      <li>
+        <%= shop.wifi_download %> Mbps download / <%= shop.wifi_upload %> Mbps upload
+      </li>
+      <li>Color of <em><span style="color: <%= shop.color_hex %>;"><%= shop.color_title %></span></em></li>
+      <li>
+        It's <em>safe</em> to poop here
+      </li>
       <li>Best to wear your <em><%= shop.attire %></em></li>
       <li>Beans are from <em><%= shop.beans %></em></li>
     </ul>

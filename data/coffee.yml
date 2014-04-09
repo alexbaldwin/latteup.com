@@ -1,28 +1,170 @@
 austin:
-  - shop:
-    slug: austin-java-demo
-    name: Austin Java Demo
+  - name: Frank
+    slug: frank
     headline: Hot dogs &amp; cold beer
-    cover_image: images/austin-java-demo.jpg
     address: 407 Colorado St, Austin, TX 78701
-    twitter: hotdogscoldbeer
-    instagram: hotdogscoldbeer
-    website: http://hotdogscoldbeer.com
     noise: 75
-    tattoos: 1.75 sleeve
-    now_playing:
-      title: Hurricane - MS MR
-      link: https://www.youtube.com/watch?v=7sj684zcmzw
-    seating:
-      indoor: 100
-      outdoor: 10
-    wifi:
-      password: Open
-      download: 3.22
-      upload: 2.08
-    color:
-      title: organic fair trade brown
-      hex: "#804000"
+    now_playing_title: Hurricane - MS MR
+    now_playing_link: https://www.youtube.com/watch?v=7sj684zcmzw
+    seating_indoor: 100
+    seating_outdoor: 10
+    wifi_download: 3.22
+    wifi_upload: 2.08
+    color_title: organic fair trade brown
+    color_hex: "#804000"
+    bathroom: Yes
+    attire: Canadian tuxedo
+    beans: assorted local roasters
+
+  - name: Quickie Pickie
+    slug: quickie-pickie
+    headline: Beer Wine Grocery Coffee Take Away Rotisserie Ice Cream Snacks 
+    address: 1208 E 11th St, Austin, TX 78702
+    noise: 65
+    now_playing_title: At The Hop - Danny and the Juniors
+    now_playing_link: https://www.youtube.com/watch?v=k6EeObPCMR8
+    seating_indoor: 34
+    seating_outdoor: 25
+    wifi_download: 26.10
+    wifi_upload: 3.23
+    color_title: Canary Yellow
+    color_hex: "#FFDC00"
+    bathroom: Yes
+    attire: casual
+    beans: local roasters
+
+  - name: Mozarts
+    slug: mozarts
+    headline: Waterside cafe
+    address: 3825 Lake Austin Blvd, Austin, TX 78703
+    noise: 50
+    now_playing_title: Hurricane - MS MR
+    now_playing_link: https://www.youtube.com/watch?v=7sj684zcmzw
+    seating_indoor: 40
+    seating_outdoor: 120
+    wifi_download: 48.47
+    wifi_upload: 5.61
+    color_title: seafoam green
+    color_hex: "#39CCCC"
+    bathroom: Yes
+    attire: yoga pants and boat shoes
+    beans: assorted local roasters
+
+  - name: Austin Java
+    slug: austin-java
+    headline: Original Cafe and Coffeehouse
+    address: 1206 Parkway, Austin, TX
+    noise: 71
+    now_playing_title: Holiday - Body Language
+    now_playing_link: https://www.youtube.com/watch?v=WJMQlTDMrAI
+    seating_indoor: 45
+    seating_outdoor: 40
+    wifi_download: 11.31
+    wifi_upload: 1.55
+    color_title: Taupe
+    color_hex: "#483C32"
+    bathroom: Yes
+    attire: khakis or boot cut jeans
+    beans: assorted local roasters
+
+  - name: Houndstooth
+    slug: houndstooth
+    headline: Home of Cafe Bedouins
+    address: 4200 N Lamar Blvd Ste. 120, Austin, TX 78756
+    noise: 79
+    now_playing_title: I Can't Get Next to You - The Temptations
+    now_playing_link: https://www.youtube.com/watch?v=7RfGe6MvY84
+    seating_indoor: 20
+    seating_outdoor: 15
+    wifi_download: 11.62
+    wifi_upload: 1.06
+    color_title: Mahogany
+    color_hex: "#C04000"
+    bathroom: Yes
+    attire: business casual, with the occasional loafers
+    beans: rotating from different origins
+
+  - name: Epoch
+    slug: epoch
+    headline: Open 24/7
+    address: 221 W North Loop Blvd, Austin, TX 78751
+    noise: 67
+    now_playing_title: Mass Productions - Iggy Pop
+    now_playing_link: https://www.youtube.com/watch?v=JqhI1w1CwlQ
+    seating_indoor: 60
+    seating_outdoor: 50
+    wifi_download: 4.49
+    wifi_upload: 0.51
+    color_title: mojo red
+    color_hex: "#FF4136"
+    bathroom: Yes
+    attire: grad-student tweed, skateboards optional
+    beans: Special blend all sourced from Texas Coffee Traders
+
+  - name: Flight Path
+    slug: flight-path
+    headline: Does not feature live music
+    address: 5011 Duval St, Austin, TX 78751
+    noise: 62
+    now_playing_title: National Anthem - Lana Del Rey
+    now_playing_link: https://www.youtube.com/watch?v=sxDdEPED0h8
+    seating_indoor: 60
+    seating_outdoor: 40
+    wifi_download: 7.35
+    wifi_upload: 1.33
+    color_title: Pastel Yellow
+    color_hex: "#FFDC00"
+    bathroom: Yes
+    attire: undergrad, healthy dose of yoga pants
+    beans: Texas Coffee Traders
+
+  - name: Spider House
+    slug: spider-house
+    headline: Hot dogs &amp; cold beer
+    address: 407 Colorado St, Austin, TX 78701
+    noise: 91
+    now_playing_title: Hurricane - MS MR
+    now_playing_link: https://www.youtube.com/watch?v=7sj684zcmzw
+    seating_indoor: 100
+    seating_outdoor: 10
+    wifi_download: 3.22
+    wifi_upload: 2.08
+    color_title: organic fair trade brown
+    color_hex: "#804000"
+    bathroom: Yes
+    attire: Canadian tuxedo
+    beans: assorted local roasters
+
+  - name: Juan Pelota
+    slug: juan-pelota
+    headline: Hot dogs &amp; cold beer
+    address: 407 Colorado St, Austin, TX 78701
+    noise: 75
+    now_playing_title: Hurricane - MS MR
+    now_playing_link: https://www.youtube.com/watch?v=7sj684zcmzw
+    seating_indoor: 100
+    seating_outdoor: 10
+    wifi_download: 3.22
+    wifi_upload: 2.08
+    color_title: organic fair trade brown
+    color_hex: "#804000"
+    bathroom: Yes
+    attire: Canadian tuxedo
+    beans: assorted local roasters
+
+  - name: Cafe Medici
+    slug: cafe-medici
+    headline: Hot dogs &amp; cold beer
+    address: 407 Colorado St, Austin, TX 78701
+    noise: 75
+    now_playing_title: Hurricane - MS MR
+    now_playing_link: https://www.youtube.com/watch?v=7sj684zcmzw
+    seating_indoor: 100
+    seating_outdoor: 10
+    wifi_download: 3.22
+    wifi_upload: 2.08
+    color_title: organic fair trade brown
+    color_hex: "#804000"
     bathroom: Yes
     attire: Canadian tuxedo
     beans: assorted local roasters
