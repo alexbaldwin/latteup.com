@@ -15,6 +15,23 @@ L.formatter = proc do |severity, datetime, progname, msg|
   "#{datetime} (#{severity[0].colorize(colors[severity.to_sym])}): #{msg}\n"
 end
 
+# TODO(icco): make this nicer.
+desc "Opimizes all images in source/images."
+task :optimize do
+  script = <<-SCRIPT
+  if [ ! -x $(command -v npm) ]; then
+    echo "Hey, we need npm to install https://github.com/JamieMason/ImageOptim-CLI";
+  fi
+
+  if [ ! -x $(command -v imageOptim) ]; then
+    npm install -g imageoptim-cli;
+  fi
+
+  imageOptim --directory source/images/
+  SCRIPT
+  Kernel.system script
+end
+
 desc "Takes an array of Foursquare Lists and generates a geojson file for each."
 task :gen_geojson do
   # Needed so we can output geojson
