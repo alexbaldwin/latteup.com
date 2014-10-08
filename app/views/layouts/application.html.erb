@@ -1,16 +1,39 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-title" content="Latte">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
+    <meta name="viewport" content="initial-scale = 1, user-scalable = no">
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6326032/755624/css/fonts.css" />
     <title>Latte</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <style>html { -webkit-text-size-adjust: 100%; }</style>
+    <script type="text/javascript">
+      if(("standalone" in window.navigator) && window.navigator.standalone){
+        var noddy, remotes = false;
+        document.addEventListener('click', function(event) {
+          noddy = event.target;
+          while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+            noddy = noddy.parentNode;
+          }
+          if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+            {
+              event.preventDefault();
+              document.location.href = noddy.href;
+            }
+        },false);
+      }
+    </script>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body class="<%= controller.controller_name + "-" + action_name %>">
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -26,7 +49,7 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      ga('create','UA-24725855-3','auto');ga('send','pageview');
     </script>
   </body>
 </html>

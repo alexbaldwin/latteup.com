@@ -1,0 +1,63 @@
+<header class="coffee-header" style="background-image: url(<%= @shop.slug %>)">
+  <section class="container px2">
+    <div class="block-headline">
+      <h1 class="h1 caps regular sans-serif m0"><%= @shop.name %></h1>
+      <h2 class="h3 mid-gray regular sans-serif caps m0"><%= @shop.tagline %></h2>
+    </div>
+  </section>
+</header>
+
+<article class="container px2">
+  <div class="row">
+    <section class="col col-8 prose">
+    <h2 class="regular m0 small mb2 author">
+      <span class="italic">Writing by</span> <a href="/curators#taylor" class="h3 caps sans-serif">Taylor Loren</a>
+      <span class="italic">Photographs by</span> <a href="/curators#andy" class="h3 caps sans-serif">Andy Keil</a>
+    </h2>
+
+    <div class="dropcap prose">
+      <%= @shop.prose %>
+    </div>
+    </section>
+
+    <aside class="col col-4 mobile-block">
+      <ul class="mid-gray small list-simple">
+        <li>
+          <label>Location</label>
+          LOCATION
+        </li>
+        <li>
+          <label>Seating</label>
+          <%= @shop.seating %>
+        </li>
+        <li>
+          <label>Now Playing</label>
+          <%= @shop.now_playing %>
+        </li>
+        <li>
+          <label>Noise Level</label>
+          <%= @shop.noise_level %>
+        </li>
+        <li>
+          <label>Wifi</label>
+          <%= @shop.wifi %>
+        </li>
+        <li>
+          <label>Bathroom</label>
+          <%= @shop.bathroom %>
+        </li>
+        <li>
+          <label>Attire</label>
+          <%= @shop.attire %>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</article>
+
+<article class="measure wrap px2">
+  <section class="center">
+    <hr class="hr m2 wrap">
+    <p class="h3 regular m0 sans-serif caps"><%= link_to "&larr;All Coffee Shops&mdash;".html_safe, root_path %></p>
+  </section>
+</article>

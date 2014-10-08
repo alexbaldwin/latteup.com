@@ -1,6 +1,15 @@
-Index of shops
-<ul>
-  <% @shops.each do |shop| %>
-    <li><%= shop.name %></li>
+<div class="left coffee-square white">
+  <div class="table-cell center p4">
+    <h1><%= image_tag('latte-logo.svg', class: 'fit pull-down', alt: 'Latte') %></h1>
+  </div>
+</div>
+
+<% @shops.each do |shop| %>
+  <%= link_to shop.slug, class: "left coffee-square white" do %>
+    <div class="coffee-bg" style="background-image: url();"></div>
+    <div class="center table-cell">
+      <h2 class="h1 sans-serif caps m0"><%= shop.name %></h2>
+      <h3 class="h4 regular"><%= shop.city.name %></h3>
+    </div>
   <% end %>
-</ul>
+<% end %>
