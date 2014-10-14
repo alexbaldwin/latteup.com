@@ -9,8 +9,7 @@
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
     <meta name="viewport" content="initial-scale = 1, user-scalable = no">
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6326032/755624/css/fonts.css" />
-    <title>Latte</title>
-    <meta name="description" content="">
+    <%= yield :meta %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -39,6 +38,8 @@
     <![endif]-->
 
     <%= yield %>
+
+    <%= render "shared/footer" %>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
