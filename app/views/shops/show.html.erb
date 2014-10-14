@@ -16,8 +16,10 @@
   <div class="row">
     <section class="col col-8 prose">
     <h2 class="regular m0 small mb2 author">
-      <span class="italic">Writing by</span> <a href="/curators#taylor" class="h3 caps sans-serif">Taylor Loren</a>
-      <span class="italic">Photographs by</span> <a href="/curators#andy" class="h3 caps sans-serif">Andy Keil</a>
+      <span class="italic">Writing by</span>
+      <%= link_to @shop.writer.name, "https://twitter.com/#{@shop.writer.twitter}", alt: "Follow #{@shop.writer.name} on Twitter", class: "h3 caps sans-serif" %>
+      <span class="italic">Photographs by</span>
+      <%= link_to @shop.photographer.name, "https://twitter.com/#{@shop.photographer.twitter}", alt: "Follow #{@shop.photographer.name} on Twitter", class: "h3 caps sans-serif" %>
     </h2>
 
     <div class="dropcap prose">

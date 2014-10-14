@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141014201442) do
+ActiveRecord::Schema.define(version: 20141014210532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,15 @@ ActiveRecord::Schema.define(version: 20141014201442) do
     t.string "name", null: false
   end
 
+  create_table "curators", force: true do |t|
+    t.string   "name"
+    t.string   "title"
+    t.string   "twitter"
+    t.string   "avatar"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
     t.integer  "sluggable_id",              null: false
@@ -52,23 +61,25 @@ ActiveRecord::Schema.define(version: 20141014201442) do
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "shops", force: true do |t|
-    t.integer  "city_id",                                          null: false
-    t.string   "name",                                             null: false
-    t.string   "tagline",                             default: ""
-    t.string   "seating",                             default: ""
-    t.string   "now_playing",                         default: ""
-    t.string   "noise_level",                         default: ""
-    t.string   "wifi",                                default: ""
-    t.string   "bathroom",                            default: ""
-    t.string   "attire",                              default: ""
-    t.text     "prose",                               default: ""
+    t.integer  "city_id",                                              null: false
+    t.string   "name",                                                 null: false
+    t.string   "tagline",                                 default: ""
+    t.string   "seating",                                 default: ""
+    t.string   "now_playing",                             default: ""
+    t.string   "noise_level",                             default: ""
+    t.string   "wifi",                                    default: ""
+    t.string   "bathroom",                                default: ""
+    t.string   "attire",                                  default: ""
+    t.text     "prose",                                   default: ""
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "cover"
-    t.decimal  "latitude",    precision: 9, scale: 6
-    t.decimal  "longitude",   precision: 9, scale: 6
+    t.decimal  "latitude",        precision: 9, scale: 6
+    t.decimal  "longitude",       precision: 9, scale: 6
     t.string   "location"
+    t.integer  "writer_id"
+    t.integer  "photographer_id"
   end
 
   add_index "shops", ["city_id"], name: "index_shops_on_city_id", using: :btree
