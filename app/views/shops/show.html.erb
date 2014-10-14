@@ -1,4 +1,4 @@
-<header class="coffee-header" style="background-image: url(<%= @shop.slug %>)">
+<header class="coffee-header" style="background-image: url(<%= @shop.cover %>)">
   <section class="container px2">
     <div class="block-headline">
       <h1 class="h1 caps regular sans-serif m0"><%= @shop.name %></h1>
@@ -16,7 +16,7 @@
     </h2>
 
     <div class="dropcap prose">
-      <%= @shop.prose %>
+      <%= @shop.prose.html_safe %>
     </div>
     </section>
 

@@ -6,7 +6,7 @@
 
 <% @shops.each do |shop| %>
   <%= link_to shop.slug, class: "left coffee-square white" do %>
-    <div class="coffee-bg" style="background-image: url();"></div>
+    <div class="coffee-bg" style="background-image: url(<%= shop.cover %>);"></div>
     <div class="center table-cell">
       <h2 class="h1 sans-serif caps m0"><%= shop.name %></h2>
       <h3 class="h4 regular"><%= shop.city.name %></h3>
