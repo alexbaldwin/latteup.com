@@ -43,21 +43,23 @@ ActiveRecord::Schema.define(version: 20141014210532) do
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "shops", force: true do |t|
-    t.integer "city_id",                      null: false
-    t.string  "name",                         null: false
-    t.string  "tagline",         default: ""
-    t.string  "seating",         default: ""
-    t.string  "now_playing",     default: ""
-    t.string  "noise_level",     default: ""
-    t.string  "wifi",            default: ""
-    t.string  "bathroom",        default: ""
-    t.string  "attire",          default: ""
-    t.text    "prose",           default: ""
-    t.string  "slug"
-    t.string  "cover"
-    t.string  "location"
-    t.integer "writer_id"
-    t.integer "photographer_id"
+    t.integer  "city_id",                      null: false
+    t.string   "name",                         null: false
+    t.string   "tagline",         default: ""
+    t.string   "seating",         default: ""
+    t.string   "now_playing",     default: ""
+    t.string   "noise_level",     default: ""
+    t.string   "wifi",            default: ""
+    t.string   "bathroom",        default: ""
+    t.string   "attire",          default: ""
+    t.text     "prose",           default: ""
+    t.string   "slug"
+    t.string   "cover"
+    t.string   "location"
+    t.integer  "writer_id"
+    t.integer  "photographer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "shops", ["city_id"], name: "index_shops_on_city_id", using: :btree

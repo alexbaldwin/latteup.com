@@ -11,6 +11,7 @@ gem 'rails', '4.1.4'
 gem 'rails_admin'
 gem 'sass-rails', '~> 4.0.3'
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'sitemap_generator'
 gem 'spring',        group: :development
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
