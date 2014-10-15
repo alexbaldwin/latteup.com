@@ -1,6 +1,6 @@
 class ShopsController < ApplicationController
   def index
-    @shops = Shop.all
+    @shops = Shop.all.order(:slug)
   end
 
   def show
