@@ -14,7 +14,7 @@
       <% @curators.each do |curator| %>
         <section class="col col-4 center mobile-block" id="<%= curator.name %>">
           <div class="p2">
-            <%= image_tag(curator.avatar, class: "full-width circle", alt: curator.name, style: "height: auto;") %>
+            <%= image_tag(curator.avatar, class: "full-width circle", alt: curator.name, style: "height: auto;", width: 800, height: 800) %>
             <h2 class="h3 caps regular sans-serif m0"><%= curator.name %></h2>
             <h3 class="small regular m0"><%= curator.title %></h3>
             <p class="small"><%= link_to "@#{curator.twitter}", "https://twitter.com/#{curator.twitter}", alt: "Follow #{curator.name} on Twitter" %></p>
