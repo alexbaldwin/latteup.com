@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'shops#index'
   get '/curators', to: 'curators#index'
   get '/contribute' => 'pages#contribute'
